@@ -1,118 +1,123 @@
-# Ganeshpithani-powerbi-customer-churn-analysis
-📊 Customer Churn Analysis – Power BI Project
-A complete end‑to‑end Power BI Data Analytics project built using a customer churn dataset.
-This project covers data cleaning, modeling, DAX measures, dashboard design, and insight generation.
+# 📊 Customer Churn Analysis – Power BI Project
 
-📝 Project Overview
-Customer churn refers to when customers stop doing business with a company.
-The aim of this project is to analyze why customers churn, identify key drivers, and build interactive dashboards to support data‑driven decisions.
+This project presents an end‑to‑end **Customer Churn Analysis** using **Power BI**.  
+The objective is to understand **why customers churn**, identify **key churn drivers**, and present insights through **interactive dashboards**.
 
-📂 Dataset Description
-The dataset includes demographic, service subscription, billing, and churn information.
-Column	Description
-customerID	Unique ID for each customer
-gender	Male / Female
-SeniorCitizen	1 = Yes, 0 = No
-Partner	Yes / No
-Dependents	Yes / No
-tenure	Tenure in months
-PhoneService	Yes / No
-MultipleLines	Yes / No
-InternetService	DSL / Fiber optic / No
-OnlineSecurity	Yes / No
-OnlineBackup	Yes / No
-DeviceProtection	Yes / No
-TechSupport	Yes / No
-StreamingTV	Yes / No
-StreamingMovies	Yes / No
-Contract	Month‑to‑month / One year / Two year
-PaperlessBilling	Yes / No
-PaymentMethod	Payment method type
-MonthlyCharges	Monthly bill
-TotalCharges	Total bill to date
-Churn	Yes / No
+---
 
-🛠️ Project Pipeline
-1️⃣ Data Loading
-Imported dataset into Power BI Desktop
-Used Power Query for initial transformations
+## 📝 Project Overview
 
-2️⃣ Data Cleaning
-Performed inside Power Query Editor:
-Removed blanks / nulls in TotalCharges
-Converted datatypes correctly
-Added conditional columns like:
-Tenure Group
-SeniorCitizenLabel
-ChurnFlag
+Customer churn occurs when customers stop using a company’s services.  
+In this project, I analyzed customer data to identify patterns related to **demographics, services, contracts, and billing**, and built dashboards to support **data‑driven retention strategies**.
 
-3️⃣ Data Modeling
-Single‑table (star‑like) structure
-Added relationships if necessary
-Created important DAX measures:
-Total Customers
-Churned Customers
-Churn Rate
-Avg Tenure
-Avg Monthly Charges
+---
 
-4️⃣ Dashboard Development
-Created 4 dashboards:
+## 📂 Dataset Description
 
-🔹 Dashboard 1: Customer Demographics
-Includes:
-Cards → Total Customers, Churn Rate, Avg Charges, Avg Tenure
-Pie chart → Gender Distribution
-Bar chart → Senior Citizens vs Churn
-Donut chart → Tenure Groups
-Scatter plot → Monthly Charges vs Tenure
-Slicers → Gender, Contract Type
+The dataset contains customer‑level information including:
 
-🔹 Dashboard 2: Service Subscription Analysis
-Includes:
-Stacked bar → Internet Service vs Churn
-Matrix → Add‑on services
-Funnel → Service usage count
-Heatmap → Service combinations
-Slicers → Gender, Senior Citizen, Service Type
+- Customer demographics (Gender, Senior Citizen, Partner, Dependents)
+- Service subscriptions (Internet, Phone, Add‑on services)
+- Contract and billing details
+- Monthly and total charges
+- Churn status (Yes / No)
 
-🔹 Dashboard 3: Contract & Billing Insights
-Includes:
-Clustered bar → Contract Type vs Churn
-Donut → Payment Method
-Column chart → Avg Total Charges by Contract
-KPI Cards → Avg Monthly Charges, Total Charges
-Histogram → Tenure by Contract Type
+Total Records: **7,000+ customers**
 
-🔹 Dashboard 4: Churn Prediction & Key Drivers
-Includes:
-KPI → Overall Churn Rate
-Bar chart → Top factors influencing churn
-Customer segmentation visual
-Revenue lost due to churn
-AI-powered key influencers visual
+---
 
+## 🛠 Tools & Technologies
 
-🎯 Key Insights
-Month‑to‑month customers churn significantly more
-Fiber optic users show the highest churn rate
-Customers with high monthly charges are more likely to churn
-Long tenure customers rarely churn
-Senior citizens have slightly higher churn compared to others
-Auto‑payment customers churn less
+- Power BI Desktop  
+- Power Query  
+- DAX (Data Analysis Expressions)  
+- Data Modeling  
+- Data Visualization  
 
-🚀 Technologies Used
-Power BI Desktop
-Power Query
-DAX
-Data Modeling
-GitHub
+---
 
-📬 How to Use This Project
-Clone the repository
-Open .pbix file in Power BI Desktop
-Refresh the dataset
-Explore dashboards and insights
+## 🔄 Project Workflow
 
-⭐ If You Like This Project
-Please give the repo a ⭐ star on GitHub!
+### 1️⃣ Data Loading
+- Imported CSV dataset into Power BI Desktop
+
+### 2️⃣ Data Cleaning & Transformation
+- Performed data cleaning using **Power Query**
+- Fixed data types and handled missing values
+- Created calculated columns:
+  - Tenure Group  
+  - SeniorCitizenLabel  
+  - ChurnFlag  
+
+### 3️⃣ Data Modeling
+- Single‑table data model
+- Created key DAX measures:
+  - Total Customers  
+  - Churned Customers  
+  - Churn Rate (%)  
+  - Average Monthly Charges  
+  - Average Tenure  
+
+### 4️⃣ Dashboard Development
+Designed **4 interactive dashboard pages**:
+
+#### 📌 Dashboard 1: Customer Demographics
+- Gender distribution
+- Senior citizens vs churn
+- Tenure group analysis
+- Monthly charges vs tenure
+
+#### 📌 Dashboard 2: Service Subscription Analysis
+- Internet service type vs churn
+- Add‑on services usage
+- Service combinations linked to churn
+
+#### 📌 Dashboard 3: Contract & Billing Insights
+- Churn by contract type
+- Payment method analysis
+- Billing trends and tenure distribution
+
+#### 📌 Dashboard 4: Churn Drivers & Key Insights
+- Overall churn rate
+- High‑risk customer segments
+- Revenue impact of churn
+- Key churn influencing factors
+
+---
+
+## 📈 Key Insights
+
+- Customers on **month‑to‑month contracts** have higher churn
+- **High monthly charges** increase churn probability
+- **Fiber optic users** show higher churn compared to DSL
+- Customers with **longer tenure churn less**
+- Auto‑payment users have better retention
+
+---
+
+## 📸 Dashboard Preview
+
+(Add screenshots or video of dashboards here)
+
+---
+
+## 🚀 How to Use This Project
+
+1. Download or clone the repository  
+2. Open the `.pbix` file in Power BI Desktop  
+3. Refresh the data  
+4. Explore dashboards and insights  
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates my ability to:
+- Clean and transform real‑world data
+- Create meaningful KPIs using DAX
+- Design interactive Power BI dashboards
+- Derive actionable business insights
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
